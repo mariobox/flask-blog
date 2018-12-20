@@ -40,11 +40,10 @@ If you want to see the blog in action, fork the repository to your own computer 
 This assumes you have Python, Flask and SQLite installed in your computer, as well as the following modules necessary to run application.py:
 
 <code>
-from cs50 import SQL<br />
-from flask_session import Session<br />
-from flask import Flask, render_template, redirect, request, session, jsonify<br />
-from datetime import datetime<br />
-</code>
+from cs50 import SQL</code><br />
+<code>from flask_session import Session</code><br />
+<code>from flask import Flask, render_template, redirect, request, session, jsonify</code><br />
+<code>from datetime import datetime</code>
 
 
 
