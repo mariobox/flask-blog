@@ -34,16 +34,16 @@ Since the post content is written in a textarea of a form, you have to specifica
 
 If you want to see the blog in action, fork the repository to your own computer and perform the following commands from the command line in your project folder:
 
-<code>export FLASK_APP=application.py</code>
+<code>export FLASK_APP=application.py</code><br />
 <code>flask run</code>
 
 This assumes you have Python, Flask and SQLite installed in your computer, as well as the following modules necessary to run application.py:
 
 <code>
-from cs50 import SQL
-from flask_session import Session
-from flask import Flask, render_template, redirect, request, session, jsonify
-from datetime import datetime
+from cs50 import SQL<br />
+from flask_session import Session<br />
+from flask import Flask, render_template, redirect, request, session, jsonify<br />
+from datetime import datetime<br />
 </code>
 
 
