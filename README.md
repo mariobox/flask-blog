@@ -14,21 +14,21 @@ The posts are stored in a SQLite database and displayed via a "SELECT * FROM pos
 
 The registration page shows you a form with several fields, indicating the conditions for each field to become valid:
 
-<img src="<img src="https://66.media.tumblr.com/595c2e9aa77b0f48a17c62928c3e9e96/tumblr_pk1w9gZUii1qz7ur9o3_1280.png" />
+<img src="https://66.media.tumblr.com/595c2e9aa77b0f48a17c62928c3e9e96/tumblr_pk1w9gZUii1qz7ur9o3_1280.png" />
 
 The form validation function uses jQuery for several of the fields, so that we don't have to send a request to the server every time.
 
 Once registered, you are redirected to a login page:
 
-<img src="<img src="https://66.media.tumblr.com/7c05ef2cdddffad133837b7b459bc25f/tumblr_pk1w9gZUii1qz7ur9o4_1280.png" />
+<img src="https://66.media.tumblr.com/7c05ef2cdddffad133837b7b459bc25f/tumblr_pk1w9gZUii1qz7ur9o4_1280.png" />
 
 Once logged-in, you can edit and delete posts just by clicking the appropriate button:
 
-<img src="<img src="https://66.media.tumblr.com/3777d1162b93a25054649abe47c096fd/tumblr_pk1w9gZUii1qz7ur9o5_1280.png" />
+<img src="https://66.media.tumblr.com/3777d1162b93a25054649abe47c096fd/tumblr_pk1w9gZUii1qz7ur9o5_1280.png" />
 
 You can write and edit posts in HTML to give them nice formatting. 
 
-<img src="<img src="https://66.media.tumblr.com/0f699d3ea6891905e58ea336541953d2/tumblr_pk1w9gZUii1qz7ur9o2_1280.png" />
+<img src="https://66.media.tumblr.com/0f699d3ea6891905e58ea336541953d2/tumblr_pk1w9gZUii1qz7ur9o2_1280.png" />
 
 Since the post content is written in a textarea of a form, you have to specifically include the "Safe" flag for the content to show HTML formatting (check the **arcicle.html** template).
 
