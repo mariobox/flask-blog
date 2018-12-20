@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+CS50x Miami - Home
+{% endblock %}
+
+{% block body %}
+    <h2>Posts</h2>
+    {% for i in range(blogLen) %}
+        <p>{{ blog[i]["date"] }} | <a href="{{ blog[i]["id"] }}/">{{ blog[i]["title"] }}</a>
+        {% if session %}
+            &nbsp;&nbsp;
+            <a href="{{ blog[i]["id"] }}/delete/"><button class="delete">Delete</button></a>
+            <a href="{{ blog[i]["id"] }}/edit/"><button class="edit">Edit</button></a></p>
+        {% endif %}
+    {% endfor %}
+
+
+{% endblock %}

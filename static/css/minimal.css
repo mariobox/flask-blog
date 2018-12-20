@@ -1,0 +1,319 @@
+/* Minimal Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+
+/* Base Style */
+
+body {
+
+  font-family: 'Catamaran', 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #222;
+  padding: 0 5%;
+}
+
+
+/* Grid */
+
+.container {
+  max-width: 769px;
+  margin: 1.5rem auto;
+}
+
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin-bottom: .4em;
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1.2em;
+  margin-bottom: .4em;
+  margin-top: 1.4em;
+}
+
+h3 {
+  font-size: 1.6em;
+  line-height: 1.2em;
+  margin-bottom: .35em;
+  margin-top: 1.35em;
+}
+
+h4 {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  margin-bottom: .35em;
+  margin-top: 1.35em;
+}
+
+h5 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-bottom: .3em;
+  margin-top: 1.3em
+}
+
+h6 {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: .3em;
+  margin-top: 1.3em;
+}
+
+
+/* Links */
+
+a:link,
+a:visited,
+a:active {
+  color: #772953;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #999;
+}
+
+
+/* Lists */
+
+ul {
+  list-style-type: square;
+}
+
+ul, ol {
+  margin-bottom: 1.0rem;
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.7rem;
+}
+
+
+/* Navigation */
+
+nav {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.blocknav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.blocknav a:link,
+.blocknav a:visited,
+.blocknav a:active {
+  color: #222;
+  font-weight: normal;
+}
+
+.blocknav a:hover,
+.blocknav a:focus {
+  color: #CCC;
+}
+
+.blocknav li {
+  list-style-type: none;
+  margin-left: 0;
+  font-size: 75%;
+  text-transform: uppercase;
+}
+
+ul.blocknav {
+  margin-bottom: 1.0em;
+  margin-left: 0;
+}
+
+a.logo {
+  text-decoration: none;
+}
+
+a.logo:link,
+a.logo:visited,
+a.logo:active {
+  text-decoration: none;
+  color: #222;
+}
+
+a.codelink:link,
+a.codelink:visited,
+a.codelink:active {
+  color: #999;
+}
+
+a.codelink:hover {
+  color: #CCC;
+}
+
+
+/* Code */
+
+code {
+  padding: .2rem .5rem;
+  margin: 1.0rem .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #4f5b6b;
+  border: 1px solid #4f5b6b;
+  border-radius: 4px;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+pre {
+    overflow: auto;
+}
+
+
+/* Buttons */
+
+button, .button, input[class="submit"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #FFF;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #999;
+  border-radius: 4px;
+  border: 1px solid #999;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button.delete {
+  background-color: #cd3333;
+}
+
+button.edit {
+  background-color: #a2cd5a;
+}
+
+.hidden {
+  display: none;
+}
+
+img.profile {
+  padding: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  margin-right: 2%;
+}
+
+img.profile.small{
+  width: 165px;
+}
+
+img.profile.medium {
+  width: 300px;
+}
+
+img.round {
+  width: 100px;
+  border-radius: 50%;
+  border: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* Other Page Elements */
+
+hr {
+  border: 1 solid #DDD;
+  clear: both;
+  border-width: 1px 0 0;
+  height: 0;
+  margin-top: 4.0em;
+  margin-bottom: 1.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+p.small {
+  font-size: 0.9em;
+}
+
+p.date {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 0px;
+}
+
+
+mark {
+  background-color: rgba(119,41,83, 0.3);
+  color: #222;
+}
+
+.alert {
+  font-size: 10pt;
+  background-color: pink;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+
+footer {
+  margin-top: 50px;
+}
+
+
+.logo {
+  display: inline-block;
+}
+
+ul.blocknav {
+  margin-top: 0.15rem;
+}
+
+.blocknav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.blocknav li:last-child {
+  margin-right: 0;
+}
+
+}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+MSC - Login
+{% endblock %}
+
+{% block body %}
+    <h2>Log In to Post</h2>
+    <div>
+        <form action="/login/" class="form" method="post">
+            <div>
+                <input type="text" name="username" autofocus placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit" class="edit">Login</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

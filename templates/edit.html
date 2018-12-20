@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+MSC - Post
+{% endblock %}
+
+{% block body %}
+    <h2>Edit your post:</h2>
+    <div>
+        <form action="/edited/" id="post" class="form" method="post">
+            <input type="text" class="hidden" id="post_id" name="id" value="{{ edit[0]["id"] }}">
+            <input type="text" id="post_title" name="title" placeholder="Title" value="{{ edit[0]["title"] }}" required><br /><br />
+            <textarea type="text" cols="80" rows="10" id="post_body" name="post" placeholder="Post" required >{{ edit[0]["post"] }}</textarea><br /><br />
+            <a href="/"></a><button>Cancel</button></a> <button class="edit" type="submit">Save Edit</button>
+        </form>
+    </div>
+{% endblock %}

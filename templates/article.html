@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ art[0]["title"] }}
+{% endblock %}
+
+{% block body %}
+    <p>&#8592;<a href="/">Back To Posts List</a></p>
+    <h2>{{ art[0]["title"] }}</h2>
+    <p>{{ art[0]["date"] }}</p>
+    <p>By {{ art[0]["author"] }}</p>
+    <p>{{ art[0]["post"] | safe }}</p><br /><br />
+    {% if session %}
+        <a href="../{{ art[0]["id"] }}/delete/"><button class="delete">Delete</button></a>
+        <a href="../{{ art[0]["id"] }}/edit/"><button class="edit">Edit</button></a></p>
+    {% endif %}
+
+{% endblock %}

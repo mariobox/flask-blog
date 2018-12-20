@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+MSC - Post
+{% endblock %}
+
+{% block body %}
+    <h2>Enter your post:</h2>
+    <div>
+        <form action="/posted/" id="post" class="form" method="post">
+            <div>
+                <input type="text" id="post_title" name="title" placeholder="Title" autofocus required><br /><br />
+            </div>
+            <div>
+                <textarea type="text" cols="80" rows="10" id="post_body" name="post" placeholder="Post" required ></textarea><br /><br />
+            </div>
+            <div>
+                <button type="submit" class="edit">Post</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

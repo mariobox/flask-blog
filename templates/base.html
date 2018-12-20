@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="shortcut icon" href="https://mariosanchez.org/favicon.ico" type="image/x-icon">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- CSS -->
+    <link href="{{ url_for('static',filename='css/minimal.css') }}"
+          rel="stylesheet" type="text/css" />
+
+    <!-- Font CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+
+    <div class="container">
+      <nav>
+        <h2><a href="/" class="logo">CS50x Miami Blog</a></h2>
+        <a href="/"><img src="{{ url_for('static',filename='img/msc.jpg') }}" class="round"></a>
+        <ul class="blocknav">
+          <li><a href="/">Posts</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+
+
+      <main>
+        <div>
+          {% block body %}{% endblock %}
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          {% if session %}
+            <p class="small">MSC &#169; 2018 | <a href="/post/">Write Post</a> | <a href="/logout/">Logout</a></p>
+          {% else %}
+            <p class="small">MSC &#169; 2018 | <a href="/new/">Register</a> | <a href="/user/">Login</a></p>
+          {% endif %}
+        </div>
+      </footer>
+
+      {% block js_inc %}
+      {% endblock %}
+      <script src="{{ url_for('static',filename='js/validate.js') }}" ></script>
+    </div>
+  </body>
+</html>
